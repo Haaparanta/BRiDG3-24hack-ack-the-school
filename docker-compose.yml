@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  frontend:
+    image: frontend-image
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+
+  backend:
+    image: backend-image
+    build: ./backend
