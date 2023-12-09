@@ -25,6 +25,7 @@ driver = webdriver.Safari(service=safari_service)
 wait = WebDriverWait(driver, 10) # Wait for up to 10 seconds
 
 try:
+    time.sleep(60)
     # Open the webpage
     driver.get("https://moodle.tuni.fi/course/view.php?id=37071")
 
