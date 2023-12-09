@@ -1,5 +1,5 @@
 version: '3.8'
 services:
-  backend:
-    image: backend-image
-    build: ./backend
+  frontend:
+    image: frontend-image
+    build: ./frontend
