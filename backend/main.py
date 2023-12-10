@@ -18,6 +18,7 @@ password = os.getenv('PASSWORD')
 if not email or not password:
     raise ValueError("EMAIL and PASSWORD environment variables are not set")
 
+time.sleep(20)
 # Initialize the Safari driver
 safari_service = Service('/usr/bin/safaridriver')
 driver = webdriver.Safari(service=safari_service)
@@ -25,7 +26,6 @@ driver = webdriver.Safari(service=safari_service)
 wait = WebDriverWait(driver, 10) # Wait for up to 10 seconds
 
 try:
-    time.sleep(60)
     # Open the webpage
     driver.get("https://moodle.tuni.fi/course/view.php?id=37071")
 

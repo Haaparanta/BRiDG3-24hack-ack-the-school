@@ -44,11 +44,11 @@ function App() {
     const interval = setInterval(() => {
       setProgress((progress) =>
         progress.map((prog, idx) =>
-          idx === index ? Math.min(prog + 100 / 120, 100) : prog
+          idx === index ? Math.min(prog + 100 / 90, 100) : prog
         )
       );
     }, 1000);
-    setTimeout(() => clearInterval(interval), 120 * 1000);
+    setTimeout(() => clearInterval(interval), 90 * 1000);
   };
 
   useEffect(() => {
